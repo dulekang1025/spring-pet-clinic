@@ -1,4 +1,4 @@
-package model;
+package lekang.petclinic.model;
 
 import java.time.LocalDate;
 
