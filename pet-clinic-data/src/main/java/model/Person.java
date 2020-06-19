@@ -1,4 +1,4 @@
-package lekang.petclinic.model;
+package model;
 
 public class Person {
 
