@@ -1,6 +1,6 @@
 package lekang.petclinic.model;
 
-public class Person {
+public class Person extends BaseEnity{
 
     private String firstName;
     private String secondName;

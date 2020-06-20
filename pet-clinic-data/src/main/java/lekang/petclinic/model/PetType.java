@@ -1,6 +1,6 @@
 package lekang.petclinic.model;
 
-public class PetType {
+public class PetType extends BaseEnity{
 
     public String getName() {
         return name;
