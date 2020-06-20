@@ -3,10 +3,12 @@ package lekang.petclinic.services.map;
 import lekang.petclinic.model.Owner;
 import lekang.petclinic.services.CrudService;
 import lekang.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
