@@ -1,2 +1,2 @@
 # spring-pet-clinic
-My spring pet clinic project.
+This is a web application building with SpringBoot using Spring FrameWork.
