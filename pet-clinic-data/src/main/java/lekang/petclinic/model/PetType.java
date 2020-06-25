@@ -2,6 +2,8 @@ package lekang.petclinic.model;
 
 public class PetType extends BaseEnity{
 
+    private String name;
+
     public String getName() {
         return name;
     }
@@ -9,6 +11,4 @@ public class PetType extends BaseEnity{
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
 }
