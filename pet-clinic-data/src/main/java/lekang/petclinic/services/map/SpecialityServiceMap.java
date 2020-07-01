@@ -2,9 +2,11 @@ package lekang.petclinic.services.map;
 
 import lekang.petclinic.model.Speciality;
 import lekang.petclinic.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
     @Override
     public Set<Speciality> findAll() {
