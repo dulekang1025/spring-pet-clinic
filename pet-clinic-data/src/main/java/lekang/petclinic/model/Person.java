@@ -1,8 +1,14 @@
 package lekang.petclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class Person extends BaseEnity{
 
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "second_name")
     private String secondName;
 
     public String getFirstName() {

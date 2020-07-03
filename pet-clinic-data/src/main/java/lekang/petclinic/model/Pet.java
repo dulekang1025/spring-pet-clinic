@@ -1,11 +1,21 @@
 package lekang.petclinic.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "pet")
 public class Pet extends BaseEnity{
 
+    @Column(name = "name")
+    private String name;
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     private PetType petType;
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private Owner owner;
+    @Column(name = "birth_date")
     private LocalDate birthDay;
 
     public String getName() {
@@ -15,8 +25,6 @@ public class Pet extends BaseEnity{
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
 
     public PetType getPetType() {
         return petType;
