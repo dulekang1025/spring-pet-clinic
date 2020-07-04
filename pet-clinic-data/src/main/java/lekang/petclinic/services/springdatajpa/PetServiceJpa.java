@@ -24,7 +24,7 @@ public class PetServiceJpa implements PetService {
     public Set<Pet> findAll() {
         Set<Pet> set = new HashSet<>();
         petRepository.findAll().forEach(set::add);
-        return null;
+        return set;
     }
 
     @Override
