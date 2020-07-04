@@ -3,11 +3,15 @@ package lekang.petclinic.services.springdatajpa;
 import lekang.petclinic.model.PetType;
 import lekang.petclinic.repositories.PetTypeRepository;
 import lekang.petclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+@Service
+@Profile("SpringDataJpa")
 public class PetTypeServiceJpa implements PetTypeService {
 
     private final PetTypeRepository petTypeRepository;
