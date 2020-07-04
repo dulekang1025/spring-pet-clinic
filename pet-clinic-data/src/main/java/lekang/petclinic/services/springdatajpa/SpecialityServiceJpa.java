@@ -3,10 +3,14 @@ package lekang.petclinic.services.springdatajpa;
 import lekang.petclinic.model.Speciality;
 import lekang.petclinic.repositories.SpecialityRepository;
 import lekang.petclinic.services.SpecialityService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("SpringDataJpa")
 public class SpecialityServiceJpa implements SpecialityService {
 
     private final SpecialityRepository specialityRepository;
